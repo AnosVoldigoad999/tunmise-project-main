@@ -25,7 +25,7 @@ body{
     font-family: font;
 }
 
-/*nav*/
+
 
 
 nav{
@@ -63,7 +63,7 @@ nav .two{
 
 ul{
     display: flex;
-    /*border: 1px solid red;*/
+    
     width: 75%;
     justify-content: space-between;
     border-bottom: var(--Dark-grayish-blue);
