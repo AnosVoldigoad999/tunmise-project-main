@@ -7,6 +7,7 @@
   
   <link rel="stylesheet" href="./style.css">
   
+
   <title>Frontend Mentor | E-commerce product page</title>
 
   
@@ -35,15 +36,16 @@
 <main>
 <div class="firstclass">
 <div class="altdiv">
-<img src="./images/image-product-1.jpg" alt="main" class="mainpic">
+<img src="./images/image-product-1.jpg" alt="main" class="mainpic" id="mainpic">
 </div>
 <div class="secaltdiv">
-  <img src="./images/image-product-1-thumbnail.jpg" alt="small" class="smallpic">
-<img src="./images/image-product-2-thumbnail.jpg" alt="small" class="smallpic">
-<img src="./images/image-product-3-thumbnail.jpg" alt="small" class="smallpic">
-<img src="./images/image-product-4-thumbnail.jpg" alt="small" class="smallpic">
+    <img src="./images/image-product-1-thumbnail.jpg" onclick="changeimage(1)" alt="small" class="smallpic">
+  <img src="./images/image-product-2-thumbnail.jpg" onclick="changeimage (2)"  alt="small" class="smallpic">
+  <img src="./images/image-product-3-thumbnail.jpg" onclick="changeimage(3)" alt="small" class="smallpic">
+  <img src="./images/image-product-4-thumbnail.jpg" onclick="changeimage(4)" alt="small" class="smallpic">
 </div>
 
+</div> 
 
 
 <div class="secondpart">
@@ -56,16 +58,68 @@
    withstand everything the weather can offer.
   </p>
   <div class="bottom">
-    <h2>$125.00  <span>50%</span></h2>
+    <h2>$125.00  <span class="habibi">50%</span></h2>
     <s>$250.00</s>
   
 
+  <div  class="bottombottom">
+    <div class="increment">
+      <img src="./images/icon-minus.svg" alt="minus" class="minus" onclick=decrement() >
+     <span id="counter"></span>
+      <img src="./images/icon-plus.svg" alt="plus" class="plus"  onclick=increment()  >
     </div>
+    <button><img src="./images/icon-cart.svg" alt="">Add to cart</button>
+  </div>
+  </div>
 </div>
 
 </div>
   </main>
 </body>
-</html>
+<script>
+  let counterValue = 0;
+  let src = "./images/icon-minus.svg"
+function updateCounter() {
+    document.getElementById('counter').innerText = counterValue;
+    
+}
 
+function increment() {
+    counterValue++;
+    updateCounter();
+}
+
+function decrement() {
+    counterValue--;
+    updateCounter();
+}
+
+
+
+function changeimage (img) {
+  
+  if (img===1) { 
+  document.getElementById("mainpic") 
+  img("image-product-1-thumbnail.jpg")                                                                                                                                     
+ }
+
+if (img===2) {
+  document.getElementById("mainpic")
+  img("image-product-2-thumbnail.jpg")
+}
+if (img===3) {
+  document.getElementById("mainpic")
+  img("image-product-3-thumbnail.jpg")
+}
+if (img===4) {
+  document.getElementById("mainpic")
+  img("image-product-4-thumbnail.jpg")
+}
+}
+
+
+updateCounter()
+</script>
+
+</html>
 
