@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -53,7 +53,7 @@
     <div class="altdiv">
       <img src="./images/image-product-1.jpg" alt="main" class="mainpic" id="mainpic">
     </div>
-    <div class="secaltdiv" id="counter">
+    <div class="secaltdiv" id="paraboi">
       <img src="./images/image-product-1-thumbnail.jpg" onclick="changeimage(1)" alt="small" class="smallpic">
       <img src="./images/image-product-2-thumbnail.jpg" onclick="changeimage(2)" alt="small" class="smallpic">
       <img src="./images/image-product-3-thumbnail.jpg" onclick="changeimage(3)" alt="small" class="smallpic">
@@ -96,10 +96,12 @@
       updateCounter();
     }
   }
+  let mainpic = document.getElementById("mainpic");
+  const images= []
 
   function changeimage(img) {
-    let mainpic = document.getElementById("mainpic");
-    if (img === 1) mainpic.src = "./images/image-product-1.jpg";
+    
+    if (img === 1) mainpic.src=("./images/image-product-1.jpg");
     if (img === 2) mainpic.src = "./images/image-product-2.jpg";
     if (img === 3) mainpic.src = "./images/image-product-3.jpg";
     if (img === 4) mainpic.src = "./images/image-product-4.jpg";
