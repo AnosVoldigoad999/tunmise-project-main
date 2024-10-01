@@ -108,7 +108,7 @@ main{
 .subs{
     display: flex;
     padding: 5px 10px;
-    border: solid 1px red;
+    /*border: solid 1px red;*/
     margin: 5px;
 }
 .subs h5{

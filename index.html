@@ -44,14 +44,14 @@
     </ul>
   </div>
   <div class="two">
-    <img src="./public/images/icon-cart.svg" alt="cart">
+    <img src="./public/images/icon-cart.svg" onclick="cart('add')" alt="cart">
     <img src="./public/images/image-avatar.png" alt="profile" class="profile" >
   </div>
 </nav>
 
 <div id="cart">
-  <div class="cart">
-    <img src="./images/icon-cart.svg" alt="">
+  <div class="cart" style="font-weight: 900;">
+    Cart
   </div>
   <div class="subs">
     <img class="pic" src="./images/image-product-1-thumbnail.jpg" alt="">
@@ -60,7 +60,7 @@
     </h5>
     <img class="fall" src="./images/icon-delete.svg" alt="">
   </div>
-  <div class="text">
+  <div class="text"  onclick="cart('remove')">
     <h5>Checkout</h5>
   </div>
   
@@ -95,7 +95,7 @@
           <img src="./images/icon-plus.svg" alt="plus" class="plus" onclick="increment()">
        
         </div>
-        <button><img src="./images/icon-cart.svg" alt="" onclick="display()">Add to cart</button>
+        <button ><img src="./images/icon-cart.svg" alt="" >Add to cart</button>
       </div>
     </div>
   </div>
@@ -121,9 +121,14 @@
   let mainpic = document.getElementById("mainpic");
  /* const images= [] */
 
-  function display() {
-    document.getElementById("cart").style.display="flex"
-    
+  function cart(action) {
+   if(action==="add"){
+    document.getElementById("cart").style.display="block"
+   }
+   
+   if(action==="remove"){
+    document.getElementById("cart").style.display="none"
+   }
   }
   
  
