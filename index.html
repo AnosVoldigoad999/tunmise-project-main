@@ -10,7 +10,7 @@
 
 
 </head>
-<body>
+<body id="reap">
 <nav class="navbar">
   <div class="one">
     <img src="./public/images/logo.svg" alt="logo" class="logo">
@@ -48,7 +48,12 @@
     <img src="./public/images/image-avatar.png" alt="profile" class="profile" >
   </div>
 </nav>
+
+
+
+
 <main>
+
   <div class="firstclass">
     <div class="altdiv">
       <img src="./images/image-product-1.jpg" alt="main" class="mainpic" id="mainpic">
@@ -74,7 +79,7 @@
           <img src="./images/icon-plus.svg" alt="plus" class="plus" onclick="increment()">
        
         </div>
-        <button><img src="./images/icon-cart.svg" alt="">Add to cart</button>
+        <button><img src="./images/icon-cart.svg" alt="" onclick="display()">Add to cart</button>
       </div>
     </div>
   </div>
@@ -100,12 +105,21 @@
   let mainpic = document.getElementById("mainpic");
  /* const images= [] */
 
+ function display(){
+  document.getElementById("reap").appendChild{
+  ""  
+  }
+
+ }
+  
+ 
+  
   function changeimage(img) {
     
     if (img === 1) mainpic.src=("./images/image-product-1.jpg");
-    if (img === 2) mainpic.src = "./images/image-product-2.jpg";
-    if (img === 3) mainpic.src = "./images/image-product-3.jpg";
-    if (img === 4) mainpic.src = "./images/image-product-4.jpg";
+    if (img === 2) mainpic.src =("./images/image-product-2.jpg") ;
+    if (img === 3) mainpic.src = ("./images/image-product-3.jpg");
+    if (img === 4) mainpic.src = ("./images/image-product-4.jpg");
   }
 
   updateCounter();

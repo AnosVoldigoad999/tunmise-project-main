@@ -28,10 +28,6 @@ body{
 }
 
 
-#counter{
-
-    /*border: 1px solid red;*/
-}
 
 nav{
     margin: 0px 10%;
@@ -93,6 +89,60 @@ main{
     margin: 0 auto;
     
     width: 75vw;
+}
+#cart{
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: var(--White);
+  padding-bottom: 10px;
+  border-radius: 20px;
+  
+}
+.cart{
+    padding: 10px 15px;
+    margin: 10px;
+    border-bottom: 1px solid var(--Grayish-blue);
+}
+.subs{
+    display: flex;
+    padding: 5px 10px;
+    border: solid 1px red;
+    margin: 5px;
+}
+.subs h5{
+    color: var(--Black);
+    
+}
+
+.pic{
+    /*border: solid 1px red;*/
+    border-radius: 10px;
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+}
+.fall{
+    /*border: solid 1px red;*/
+    width: 15px;
+    height: 20px;
+    margin: 10px 20px;
+    
+}
+.text{
+    border-radius: 10px;
+    font-family: font;
+    padding: 20px;
+    background-color: var(--Orange);
+    color: black;
+    font-weight: 700;
+    border: none;
+    width: 200px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
 }
 
 
@@ -226,7 +276,7 @@ button img{
   }
 
   .dropdown:hover .dropbtn {
-    background-color: #3e8e41;
+   /* background-color: black; */
   }
 
   .dropdown-toggle {
